@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facultad de Ingeniería Ventas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: #c50000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilo para el contenedor de la imagen y el texto */
+        .facultad-container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff00; /* Color azul de fondo */
+            padding: 10px; /* Ajusta el relleno según sea necesario */
+            margin-top: -5px; /* Margen negativo para evitar separación del encabezado */
+        }
+
+        /* Estilos para la imagen de la facultad */
+        .facultad-container img {
+            width: 75px; /* Ajusta el ancho según sea necesario */
+            height: auto; /* Ajusta la altura automáticamente */
+            margin-right: 10px;
+        }
+
+        /* Estilo para el contenedor de productos */
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo para el rectángulo del producto */
+        .product-box {
+            background-color: #ff00003d;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Estilos para el nombre del producto */
+        .product-name {
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        /* Estilos para la imagen del producto */
+        .product-image {
+            width: 120px;
+            height: auto; /* Ajusta la altura automáticamente */
+            margin: 10px 0;
+        }
+
+        /* Estilos para el precio del producto */
+        .product-price {
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        /* Estilos para el enlace de más información */
+        .more-info-link {
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .more-info-link:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con escudo -->
+    <header>
+        <div class="facultad-container">
+            <!-- Agrega la imagen desde la carpeta "static/img" -->
+            <img src="../static/img/ingenieria/escudo_ingenieria.png" alt="Escudo de Ingeniería">
+            <h1>Facultad de Ingeniería Ventas</h1>
+        </div>
+    </header>
+
+    <!-- Contenedor de productos -->
+    <div class="product-container">
+        <!-- Producto 1 -->
+<div class="product-box">
+    <p class="product-name">Play Station 4 Slim</p>
+    <img class="product-image" src="../static/img/ingenieria/productos/producto_1.jpg" alt="Imagen del Producto 1">
+    <p class="product-price">$3500.00</p>
+    <a class="more-info-link" href="{{ url_for('producto_info', producto_id=1) }}">Más información</a>
+</div>
+
+<!-- Producto 2 -->
+<div class="product-box">
+    <p class="product-name">Lámpara de medusa</p>
+    <img class="product-image" src="../static/img/ingenieria/productos/producto_2.jpg" alt="Imagen del Producto 2">
+    <p class="product-price">$60.00</p>
+    <a class="more-info-link" href="{{ url_for('ingenieria.producto_2_info') }}">Más información</a>
+
+</div>
+
+
+        <!-- Agrega más productos según sea necesario -->
+    </div>
+
+    <!-- Agrega más contenido según sea necesario -->
+</body>
+</html>

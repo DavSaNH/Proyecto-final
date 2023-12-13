@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva Facultad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #001f3f; /* Azul marino */
+      color: #FFD700; /* Dorado */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #facultadContainer {
+      background-color: #001f3f; /* Azul marino */
+      color: #FFD700; /* Dorado */
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #nuevaFacultadForm {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #001f3f; /* Azul marino */
+      color: #FFD700; /* Dorado */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004080; /* Azul marino más oscuro al pasar el ratón */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="facultadContainer">
+    <h1>Formulario para Nueva Facultad</h1>
+
+    <form id="nuevaFacultadForm" action="#" method="post">
+      <label for="nombreFacultad">Nombre de la Facultad:</label>
+      <input type="text" id="nombreFacultad" name="nombreFacultad" required>
+      <br>
+
+      <label for="ubicacionFacultad">Ubicación de la Facultad:</label>
+      <input type="text" id="ubicacionFacultad" name="ubicacionFacultad" required>
+      <br>
+
+      <input type="submit" value="Aceptar" onclick="mostrarMensaje()">
+    </form>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      alert("Su solicitud ha sido procesada");
+    }
+  </script>
+
+</body>
+
+</html>

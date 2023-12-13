@@ -1,0 +1,27 @@
+import sqlite3
+import os
+
+# ... (otras importaciones y código)
+
+# Ruta completa al archivo de la base de datos
+db_path = os.path.join(os.path.dirname(__file__), 'usuarios.db')
+
+# Crear conexión y cursor
+conn = sqlite3.connect(db_path)
+c = conn.cursor()
+
+# Ejecutar consulta de creación de tabla u otras operaciones si es necesario
+c.execute('''
+    CREATE TABLE IF NOT EXISTS usuarios (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        nombres TEXT,
+        apellidos TEXT,
+        correo TEXT,
+        facultad TEXT,
+        imagen TEXT
+    )
+''')
+
+# Guardar cambios y cerrar la conexión
+conn.commit()
+conn.close()

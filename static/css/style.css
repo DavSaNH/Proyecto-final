@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #001f3f; /* Azul marino */
+    color: #FFD700; /* Dorado */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header h1, header h2 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #001f3f; /* Azul marino */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  #agregarFacultadBtn {
+    background-color: #001f3f; /* Azul marino */
+    color: #FFD700; /* Dorado */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #agregarFacultadBtn:hover {
+    background-color: #004080; /* Azul marino más oscuro al pasar el ratón */
+  }
+  
+  #agregarFacultadForm {
+    background-color: #FFD700; /* Dorado */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  #nombreFacultad {
+    margin-right: 10px;
+  }
+  
+  footer {
+    background-color: #001f3f; /* Azul marino */
+    color: #FFD700; /* Dorado */
+    text-align: center;
+    padding: 10px;
+  }
+  
